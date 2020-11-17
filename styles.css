@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 45px;
+  text-align: center;
+}
+
+.card-header {
+  height: 100px;
+}
+
+.img-cropper {
+  width: 90px;
+  height: 90px;
+  /* position: relative; */
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+body {
+  margin-top: 100px;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
