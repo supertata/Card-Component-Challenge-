@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | Profile card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile card component</title>
+
     <style>
       .attribution {
         font-size: 11px;
@@ -25,37 +23,44 @@
       }
     </style>
   </head>
-  <body>
+  <body class="svg">
     <div class="card">
-      <div class="card-header"></div>
-      <div class="img-cropper">
-        <img src="images/image-victor.jpg" alt="picture of Victor" />
+      <div class="card-header">
+        <img
+          class="border-radius-top"
+          src="images/bg-pattern-card.svg"
+          alt="blue pattern"
+        />
       </div>
-      <div class="body">
-        <p>Victor Crest 26</p>
-        <p>London</p>
+      <div class="img-cropper">
+        <img
+          class="img-victor"
+          src="images/image-victor.jpg"
+          alt="picture of Victor"
+        />
+      </div>
+      <div class="card-body">
+        <p class="font-size">
+          Victor Crest <span class="grey-font light-font padding-left">26</span>
+        </p>
+        <p class="grey-font padding-top">London</p>
       </div>
       <hr />
-      <div class="footer flex">
+      <div class="card-footer flex">
         <div class="flex-row">
-          <p>80K</p>
-          <p>Followers</p>
+          <p class="font-size">80K</p>
+          <p class="grey-font light-font padding-top small-font">Followers</p>
+          <!-- <img viewBox="0 0 20 20" src="images/bg-pattern-bottom.svg" /> -->
         </div>
         <div>
-          <p>803K</p>
-          <p>Likes</p>
+          <p class="font-size">803K</p>
+          <p class="grey-font light-font padding-top small-font">Likes</p>
         </div>
         <div>
-          <p>1.4K</p>
-          <p>Photos</p>
+          <p class="font-size">1.4K</p>
+          <p class="grey-font light-font padding-top small-font">Photos</p>
         </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
